@@ -1,0 +1,109 @@
+.types__section
+{
+    display: flex;
+    width: 90%;
+    height: 60vh;
+    margin: 5% 5% 10% 5%;
+    overflow: visible;
+    z-index: 2;
+}
+.color__change
+{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height: 60%;
+  
+    backdrop-filter: blur(23);
+    border-radius: 50%;
+    margin-top: 5%;
+  
+}
+.types__left__side
+{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-image: url('../assets/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
+    animation: 10s infinite linear animate;
+}
+.green__apple__img
+{
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    left: 60%;
+    top: 10%;
+    z-index: 1;
+}
+.yellow__apple__img
+{
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    width: 40%;
+    height: 40%;
+    left: -55%;
+    top: 65%;
+  
+   
+}
+.types__right__side
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    font-family: roboto,cursive;
+    font-weight: 300;
+    padding: 10% 5% 10% 10%;
+    line-height: 35px;
+    font-size: 1.5rem;
+    height: 100%;
+    background-color: rgba(38, 39, 39, 0.336);
+    backdrop-filter: blur(10px);
+}
+.types__button
+{
+       display: flex;
+       width: max-content;
+       margin-top: 10%;
+       text-transform: uppercase;
+       font-size: 1rem;
+       cursor: pointer;
+       font-weight: 200;
+       padding: 2% 10% ;
+       border: 1px solid whitesmoke;
+      
+}
+@keyframes animate
+{
+    0%
+    {
+        box-shadow: 200px -80px 200px 0px rgb(59, 4, 4);
+    }
+    25%
+    {
+        box-shadow: 200px -80px 200px 0px rgb(45, 121, 26);
+    }
+    50%
+    {
+        box-shadow: 30px -80px 200px 0px rgb(145, 23, 23);
+    }
+    75%
+    {
+        box-shadow: 400px -80px 200px 0px   rgb(15, 65, 22);
+    }
+    
+    100%
+    {
+        box-shadow: 200px -80px 200px 0px rgb(59, 4, 4);
+    }
+}

@@ -1,0 +1,229 @@
+.bmi__section
+{
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    background-color: rgba(7, 7, 7, 0.63);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5;
+    backdrop-filter: blur(102px);
+    margin: 5%;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.bmi__img
+{
+    display: flex;
+    position: absolute;
+    height: 90%;
+    width: 4px;
+    margin-top: -45%;
+    object-fit: cover;
+    overflow: visible;
+    rotate: -100deg;
+    z-index: 0;
+    left: calc(90% - 200px);
+    animation: 10s 1 linear  apple;
+    animation-fill-mode: forwards;
+}
+.animated__div
+{
+    width: 300px;
+    height: 300px;
+   border-radius: 50%;
+    position: absolute;
+    margin-top:50%;
+    filter: blur(212px);
+    animation: 10s  infinite linear animateddiv;
+}
+
+.bmi__left__side
+{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    line-height: 45px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 200;
+    padding: 5%;
+    font-family: roboto;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+}
+.bmi__right__side
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: rgba(1, 3, 0, 0.911);
+    width: 40%;
+    margin:10%;
+    height: 90%;
+    padding: 2%;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+}
+.height__area
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    
+}
+.bmi__right__side span
+{
+    display: flex;
+    font-family: roboto,cursive;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+::placeholder
+{
+    color: rgb(170, 163, 163);
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: capitalize
+}
+.height__inputs 
+{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  height:8vh;
+  
+
+}
+.bmi__inputs
+{
+   border: none;
+   outline: none;
+   width: 100%;
+   height: max-content;
+   border-bottom: 2px solid green;
+   background-color: transparent;
+   padding-bottom: 2px;
+   font-size: 1.2rem;
+   color: whitesmoke;
+   transition: 0.4s all linear;
+  
+}
+.bmi__inputs:focus
+{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+
+}
+.weight__area
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+}
+.result__area
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.4s ll linear;
+    align-self: center;
+    height: 100%;
+    gap: 10px;
+    font-size: 1.1rem;
+    margin-top: 5%;
+
+}
+.result__area :nth-child(1)
+{
+    font-size: 2.5rem;
+    width: 120px;
+    height: 120px;
+    font-family: 'Kalam', cursive;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+    border-radius: 50%;
+}
+
+.bmi__btn
+{
+    display: flex;
+    width: 100%;
+    border: 1px solid green;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: roboto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    letter-spacing: 0.5px;
+    padding: 2%;
+    margin-top: 5%;
+    text-transform: uppercase;
+    height: 20%;
+    transition: 0.4s all ease-in-out;
+}
+.bmi__btn:hover
+{
+    background-color: green;
+    width: 80%;
+   
+    transition: 0.4s all ease-in-out;
+}
+
+
+@keyframes animateddiv
+{
+    0%
+    {
+ left: 0;
+ background-color: rgb(255, 17, 0);
+ margin-top: 30%;
+    }
+  
+   
+  
+    50%
+    {
+        left: calc(100% - 300px);
+        background-color: rgb(59, 189, 33);
+ margin-top: 40%;
+    
+    }
+    100%
+    {
+        left: 0;
+        background-color: rgb(255, 17, 0);
+ margin-top: 30%;
+    }
+
+}
+@keyframes apple
+{
+    0%
+    {
+left:0px;
+margin-top: 30%;
+rotate: 360deg;
+    }
+    100%
+    {
+right: 20;
+rotate: -90deg;
+    }
+}
