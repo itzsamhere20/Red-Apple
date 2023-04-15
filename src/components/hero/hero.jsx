@@ -2,6 +2,7 @@ import "../hero/hero.css"
 import { useState } from "react";
 import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs"
 import herovideo from "../assets/hero.mp4"
+import { HashLink } from "react-router-hash-link";
 export default function Hero() {
   
   const [scrolled, setscrolled] = useState(false);
@@ -20,9 +21,9 @@ export default function Hero() {
        <div className="hero__writing__section">
         <div className="hero__heading">Cultivate + Delight</div>
         <p>Striving for the Freshest Flavors</p>
-        <button className="hero__button" title="choose your favorite Apple">
+        <HashLink to='../feature_1#apple_varieties' className="hero__button" title="choose your favorite Apple">
         Which Apple is your Favorite?
-        </button>
+        </HashLink>
        </div>
 
 

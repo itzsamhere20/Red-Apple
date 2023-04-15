@@ -7,7 +7,7 @@ export default function Blog4() {
   return (
 
     
-<div className='blogs__container'>
+<div className='blogs__container' id=' 10_tips_for_vegan_baking'>
 <Navbar />
         <div className="blog__heading__section">
             <img src={blog__4} alt=" seeds image" className='blog__heading__img' />

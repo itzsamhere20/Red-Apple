@@ -5,7 +5,7 @@ import  blog__1 from "../../assets/blog1.jpg"
 import blog__1_1 from "../../assets/blog1.1.jpg"
 export default function Blog1() {
   return (
-    <div className='blogs__container'>
+    <div className='blogs__container' id='seed_cycling_benifits'>
 <Navbar />
         <div className="blog__heading__section">
             <img src={blog__1} alt=" seeds image" className='blog__heading__img' />
@@ -15,8 +15,8 @@ export default function Blog1() {
                     Seed Cycling Benefits for Hormone Balance and PCOS
                     </div>
                     <div className="date">
-                     <div className="blog__writter">amna mushtaq</div>
-                     <div className="blog__date">24 - jan - 2000</div>
+                     <div className="blog__writter">Erin Funderlich</div>
+                     <div className="blog__date">22 - July - 2022</div>
                      </div>
                 </div>
         </div>

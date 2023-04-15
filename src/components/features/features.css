@@ -56,8 +56,10 @@
     margin-top: 50vh;
     font-size: 2rem;
     background: linear-gradient( rgba(0, 0, 0, 0) 0% ,  black 70% );
-        transition:1s all ease-in-out;
+    transition:1s all ease-in-out;
     overflow: hidden;
+    text-decoration: none;
+    color: whitesmoke;
     cursor: pointer;
 }
 .feature:hover .feature__button 

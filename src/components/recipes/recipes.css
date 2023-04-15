@@ -1,0 +1,38 @@
+.apple__recipe__imgs
+{
+    display: flex;
+    width: 100%;
+    height:90%;
+    object-fit: cover;
+    margin: 5% 0% 5% 10% ;
+    border-radius: 20px 0 0 20px;
+}
+.apple__recipes__btn
+{
+    display: flex;
+    width: max-content;
+    padding: 0% 8%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    background-color: green;
+    border:1px solid green;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s all ease-in-out;
+}
+.apple__recipes__btn:hover
+{
+    
+    background-color: transparent;
+}
+.apple__types__container :nth-child(even) .apple__recipe__imgs
+{
+   
+   
+   margin: 5% 10% 5% 0 ;
+   border-radius: 0px 20px 20px 0px;
+   
+ 
+  
+}

@@ -1,0 +1,19 @@
+.cooking__time__container
+{
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    height: 15vh;
+    text-align: center;
+    font-weight: 500;
+    background-color: rgb(24, 24, 24);
+    align-items: center;
+}
+.bottom__line
+{
+    display: flex;
+    width: 60%;
+    margin: 10%;
+    align-self: center;
+    border-bottom: 1px solid green;
+}

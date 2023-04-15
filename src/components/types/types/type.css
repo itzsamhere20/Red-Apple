@@ -1,0 +1,76 @@
+.apple__types__container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+
+}
+.apple__types__section
+{
+    display: flex;
+    width: 90%;
+    margin: 0% 5% 2% 5%;
+    gap: 50px;
+    background:linear-gradient(to right, black , rgba(17, 17, 17, 0.452)  100% );
+    border-radius: 20px;
+    height: max-content;
+    
+}
+.apple__types__left__side
+{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
+.apple__types__imgs
+{
+    display: flex;
+    height: 40vh;
+    object-fit: contain;
+    animation: updown 5s infinite ease-in-out;
+}
+.apple__types__right__side
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-left: 5%;
+    height: max-content;
+    padding:5% 5% 5% 0%;
+}
+.apple__types__right__side h1
+{
+    color: whitesmoke;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+.apple__types__right__side p
+{
+ font-size: 1.2rem;
+ line-height: 30px;
+}
+.apple__types__right__side ul
+{
+    font-size: 1.1rem;
+line-height: 30px;
+}
+
+.apple__types__container :nth-child(even)
+{
+   flex-direction: row-reverse;
+   
+ 
+  
+}
+.apple__types__section :nth-child(even) 
+{
+    flex-direction: column;
+  
+  
+  
+}

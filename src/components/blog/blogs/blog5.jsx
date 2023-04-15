@@ -8,7 +8,7 @@ export default function Blog5() {
   return (
 
     
-<div className='blogs__container'>
+<div className='blogs__container' id='apple_nachos'>
 <Navbar />
         <div className="blog__heading__section">
             <img src={blog__5} alt=" seeds image" className='blog__heading__img' />

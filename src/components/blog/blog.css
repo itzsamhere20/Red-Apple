@@ -1,7 +1,7 @@
 .blog__section
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     width: 90%;
     height:auto;
     margin: 5%;
@@ -54,6 +54,8 @@
 .read__more__btn
 {
     display: flex;
+    text-decoration: none;
+    color: whitesmoke;
     padding: 2% 4%;
     width: max-content;
     border:1px solid green;

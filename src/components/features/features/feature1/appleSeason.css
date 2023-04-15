@@ -1,0 +1,133 @@
+.floating__apple
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding: 10%;
+    align-items: center;
+}
+.feature__img
+{
+    display: flex;
+    width: 60%;
+ 
+    align-self: center;
+    animation: updown 4s infinite ease-in-out;
+}
+@keyframes updown
+{
+    0%
+    {
+        margin-top: 0;
+      
+
+
+    }
+    50%
+    {
+          margin-top: 20px;
+        
+    }
+    100%
+    {
+margin-top: 0;
+    }
+}
+.table__links
+{
+    color: whitesmoke;
+    text-decoration: none;
+    border-top: 0px solid green;
+    transition: 0.4s all ease-in-out;
+}
+
+table
+{
+    text-align: center;
+    font-size: 1rem;
+}
+th
+{
+    background-color: #050505;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;padding: 2%;
+   
+}
+tr:nth-child(even) {
+    background-color: #0f0f0f;
+  
+  }
+  tr:hover {background-color: #303030;
+}
+
+  .apple__varieties
+  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    width: 100%;
+    margin-bottom: 10%;
+    gap: 30px;
+
+  }
+  .apple__detail
+  {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: lowercase;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: visible;
+    background: linear-gradient( rgba(15, 15, 15, 0.582),   black 95%);
+  }
+ 
+  .atropos img
+  {
+    width: 100%;
+    align-self: center;
+    height: 35vh;
+    background-color: none;
+    object-fit:contain;
+  }
+  .variety__apple__detail
+  {
+    display: flex;
+    width: 100%;
+    padding: 0% 5%;
+    flex-direction: column;
+  }
+  .atropos h5
+  {
+    color: whitesmoke;
+    margin-bottom: 5%;
+    width: max-content;
+    font-size: 1.5rem;
+    border-bottom:1px solid rgb(255, 255, 255) ;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  .atropos p
+  {
+    
+    text-transform: capitalize;
+
+  }
+  .variety__apple__detail p{
+    padding-bottom: 5%;
+    display: flex;
+    font-family: roboto;
+    width: 100%;
+    line-height: 25px;
+    font-size: 1rem;
+  }
+  .types__hashlink
+  {
+    text-decoration: none;
+
+  }
+ 
+  

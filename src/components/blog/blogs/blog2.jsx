@@ -6,7 +6,7 @@ export default function Blog2() {
   return (
 
     
-<div className='blogs__container'>
+<div className='blogs__container' id='gut_healing_guide'>
 <Navbar />
         <div className="blog__heading__section">
             <img src={blog__2} alt=" seeds image" className='blog__heading__img' />

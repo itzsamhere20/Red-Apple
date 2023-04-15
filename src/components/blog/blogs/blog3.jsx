@@ -9,7 +9,7 @@ export default function Blog3() {
   return (
 
     
-<div className='blogs__container'>
+<div className='blogs__container' id='making_non_alchoholic_apple_cider'>
 <Navbar />
         <div className="blog__heading__section">
             <img src={blog__3} alt=" seeds image" className='blog__heading__img' />

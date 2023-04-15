@@ -13,7 +13,7 @@ export default function Blog6() {
   return (
 
     
-<div className='blogs__container'>
+<div className='blogs__container' id='healthy_holiday_treats'>
 <Navbar />
         <div className="blog__heading__section">
             <img src={blog__6} alt=" seeds image" className='blog__heading__img' />

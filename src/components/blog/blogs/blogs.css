@@ -32,7 +32,7 @@
     width: 100%;
     height: 60vh;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     position: absolute;
 
 }
@@ -40,7 +40,7 @@
 {
     display: flex;
     width: 90%;
-    margin: 5%;
+    margin: 4%;
     letter-spacing: 1px;
     font-size: 4rem;
     font-weight: 900;
@@ -49,7 +49,8 @@
 {
     display: flex;
     width: 90%;
-    justify-content: space-around;
+    height: 100%;
+    justify-content: space-evenly;
     font-size: 1.2rem;
     text-transform: capitalize;
     font-weight: 400;
@@ -61,7 +62,6 @@
     font-size: 1.5rem;
     width: 100%;
   
-
 }
 
 .blog__date
@@ -91,6 +91,7 @@
 .blog__paragraph__section h2
 {
     font-size: 1.9rem;
+    color: green;
 }
 .blog__paragraph__section span
 {
@@ -103,13 +104,25 @@
 {
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
-    font-family: roboto,cursive;
-    line-height: 50px;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-family: system-ui;
+    line-height: 40px;
+    font-weight: 300;
     color: rgb(170, 170, 170);
 }
 .blog__paragraph__section ul,ol 
 {
     margin-left: 8%;
+    list-style: none;
+   
+}
+.blog__paragraph__section li::before
+{
+    content: "\2022";
+  color: green;
+  list-style: circle;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }

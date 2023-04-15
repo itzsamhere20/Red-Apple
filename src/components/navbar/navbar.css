@@ -86,8 +86,13 @@
     transition: 0.4s all linear;
     color: rgb(109, 24, 24);
 }
-.nav__links__side li:active
+.selected
 {
+    color: red;
     background-color: aqua;
-    color: aqua;
+}
+.hashlink
+{
+    text-decoration: none;
+    color: whitesmoke;
 }
