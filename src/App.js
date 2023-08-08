@@ -14,7 +14,6 @@ import Blog4 from "./components/blog/blogs/blog4"
 import Blog5 from "./components/blog/blogs/blog5"
 import Blog6 from "./components/blog/blogs/blog6"
 import Recipes from './components/recipes/recipes';
-import Aboutus from './components/about/aboutus';
 import AppleSeason from './components/features/features/feature1/appleSeason';
 import Benifits from './components/features/features/feature2/benifits';
 import Diets from './components/features/features/feature3/diets';
@@ -29,14 +28,13 @@ export default function App() {
 
           <Routes>
             <Route path="/" element={<Home />} activeStyle={{ color: 'red' }} />
-            <Route exact path="about" element={<Aboutus />} />
             <Route exact path="apple_recipes" element={<Recipe />} />
             <Route exact path="recipes" element={<Recipes />} />
             <Route exact path="feature_1" element={<AppleSeason />} />
             <Route exact path="feature_2" element={<Benifits />} />
             <Route exact path="feature_3" element={<Diets />} />
             <Route exact path="types" element={<Type />} />
-            <Route path="bmi" element={<Bmi />} />
+            <Route exact path="bmi" element={<Bmi />} />
             <Route exact path="blogs" element={<Blog />} />
             <Route path="blog1" element={<Blog1 />} />
             <Route path="blog2" element={<Blog2 />} />

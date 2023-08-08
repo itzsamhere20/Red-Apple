@@ -8,6 +8,7 @@
     font-size: 1.1rem;
     position: fixed;
     bottom: 0vh;
+    overflow: hidden;
     z-index: 1;
     color: whitesmoke;
     
@@ -17,12 +18,12 @@
     display: flex;
     transition: 0.4s all linear;
     width: 100%;
-    bottom: 0vh;
+    bottom: 2vh;
     position: fixed;
     height: 12vh;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0);
     font-size: 1.1rem;
-    color: whitesmoke;
+
     z-index: 100;
 }
 .top__logo__container
@@ -68,6 +69,7 @@
 {
     display: flex;
     width: 50%;
+    border-radius: 40px;
     justify-content: center;
     height: 100%;
 
@@ -80,19 +82,128 @@
     justify-content: space-around;
     list-style: none;
 }
-.nav__links__side li:hover
+.nav__links{
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+   
+}
+.nav__links span
+{
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+
+}
+
+.nav__links__side li:hover .nav__links
 {
     cursor: pointer;
     transition: 0.4s all linear;
-    color: rgb(109, 24, 24);
+    color: rgb(204, 29, 29);
+
 }
-.selected
+.nav__links li:active
 {
-    color: red;
-    background-color: aqua;
+    color: green;
+    font-size: 4rem;
 }
+
+
 .hashlink
 {
     text-decoration: none;
     color: whitesmoke;
 }
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:500px)
+{
+    .nav__container
+{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    transition: 0.4s all linear;
+    bottom: 0vh;
+    z-index: 1;
+    color: whitesmoke;
+    
+}
+.nav__container2
+{
+    
+    bottom: 2vh;
+    height: 7vh;
+    width: 100%;
+   
+}
+.top__logo__container
+{
+   
+    display: none;
+   
+}
+
+.nav__logo__side
+{
+    display: flex;
+}
+
+
+.nav__logo{
+  
+    display: flex;
+    width: 150px;
+    height: 100%;
+
+    
+}
+.nav__links__side
+{  align-self: center;
+    margin-left: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+
+
+.nav__links__side ul{
+    
+    justify-content: space-around;
+
+
+   
+}
+.nav__links{
+    font-size: 1.5rem;
+    
+}
+.nav__links span
+{
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+}
+

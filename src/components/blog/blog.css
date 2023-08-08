@@ -70,3 +70,53 @@
   background-color: green;
   border:1px solid black
 }
+
+
+
+
+@media only screen and (max-width:500px)
+{
+    .blog__section
+{
+   
+    width: 80%;
+    margin: 5% 10% 20% 10%;
+   
+}
+
+.blog__img
+{
+
+    height: 25vh;
+}
+.blog__detail
+{
+    
+    gap: 10px;
+
+
+}
+.blog__detail h3
+{
+    font-size: 1.4rem;
+    line-height: 28px;
+
+}
+.blog__detail p
+{
+     font-size: 1rem;
+     line-height: 25px;
+}
+.read__more__btn
+{
+    padding: 2% 4%;
+    font-size: 1rem;
+  
+}
+.read__more__btn:hover
+{
+  background-color: green;
+  border:1px solid black
+}
+
+}

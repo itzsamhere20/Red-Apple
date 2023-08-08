@@ -11,6 +11,7 @@
     backdrop-filter: blur(102px);
     margin: 5%;
     color: whitesmoke;
+    overflow: hidden;
     border-radius: 10px;
 }
 .bmi__img
@@ -35,6 +36,7 @@
    border-radius: 50%;
     position: absolute;
     margin-top:50%;
+    overflow: hidden;
     filter: blur(212px);
     animation: 10s  infinite linear animateddiv;
 }
@@ -226,4 +228,74 @@ rotate: 360deg;
 right: 20;
 rotate: -90deg;
     }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:500px)
+{
+    .bmi__section
+{
+    
+    flex-direction: column;
+    width: 80%;
+    height: 80vh;
+    margin: 1% 10% 5% 10%;
+    
+   
+}
+.bmi__img
+{
+  
+    height: 50%;
+    margin-top: -65%;
+    left: calc(90% - 180px);
+   
+}
+
+
+.bmi__left__side
+{
+    
+    flex: 0;
+    width: 100%;
+    line-height: 30px;
+    height: 30%;
+    font-size: 1.4rem;
+    padding: 5%;
+
+}
+.bmi__right__side
+{
+   
+    width: 90%;
+    margin:1% 5% 1% 5%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+
+
+.bmi__btn
+{
+    margin: 5% 5% 10% 5%;
+
+    
+   
+    border: 1px solid green;
+    box-shadow: 0px 0px 10px 0px green;
+    
+    
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+    padding: 2%;
+    margin-top: 5%;
+    height: 18%;
+  
+}
 }

@@ -1,5 +1,4 @@
 
-
 .hero__video
 {
     display: flex;
@@ -82,5 +81,201 @@
 {
     color: rgb(141, 14, 14);
     transition: 0.4s all linear;
+
+}
+
+.hamburger
+{
+    display: none;
+    font-size: 2rem;
+    color: #181818;
+    width: max-content;
+    align-self: center;
+    z-index: 99;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+/*-------------------------------- Mobile Links Area -------------------- */
+
+.mobile__links
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color:rgba(255, 255, 255, 0.158);
+    backdrop-filter: blur(10px);
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+    width: 60%;
+    z-index: 99;
+    box-shadow: 0 10px 10px 1px rgb(22, 21, 21), 
+    0 1px 10px 100vw rgba(0, 0, 0, 0.658);
+    align-items: center;
+}
+.mobile__links__icons
+{
+    display: flex;
+    
+    width: 100%;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    padding: 5%;
+    gap: 7%;
+
+}
+
+.hamburger__close
+{
+    display: flex;
+    padding-bottom: 5%;
+    width: 100%;
+    transition: 1s all ease-in-out;
+    height: 10%;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: flex-end;
+    margin-right: 15%;
+}
+.mobile__links a
+{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.mobile__links ul
+{
+    display: flex;
+    position: relative;
+    transition: 0.4s all ease-in-out;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    list-style: none;
+    text-decoration: none;
+}
+.mobile__links li
+{   
+    display: flex;
+    transition: 0.4s all ease-in-out;
+    width: 100%;
+    justify-content: center;
+    padding: 5%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.589);
+}
+.mobile__links__a
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile__links li:hover 
+{
+     display: flex;
+     background-color: black;
+}
+.mobile__links li:hover .mobile__links__a
+{
+     color: whitesmoke;
+}
+
+
+
+
+
+@media only screen and (max-width:480px)
+{
+
+
+    
+.hero__video
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero__writing__section
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+.hero__heading
+{
+    font-size: 5rem;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+}
+.hero__writing__section p
+{
+    font-weight: 400;
+    font-family: 'Kalam', cursive;
+    font-size: 1.8rem;
+    display: flex;
+    margin: 10px;
+    
+}
+.hero__button
+{
+    display: flex;
+    padding:1.5% 3%;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.247);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 4%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    border: 1px solid white;
+
+}
+.hero__button:hover
+{
+    background-color: black;
+    border:1px solid black;
+    transition: 0.4s all ease-in-out;
+
+}
+
+.hero__social__links
+{
+    display: flex;
+    position: fixed;
+    width: 20%;
+    transition: 0.4s all;
+    margin-right: 5%;
+    height: 20vh;
+    bottom: 0;
+    font-size: 1.2rem;
+    justify-content: flex-end;
+    gap: 40px;
+    z-index: 1;
+    align-items: center;
+}
+
+.hero__social__links a{
+    color: whitesmoke;
+}
+.hero__social__links a:hover
+{
+    color: rgb(141, 14, 14);
+    transition: 0.4s all linear;
+
+}
 
 }

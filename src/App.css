@@ -36,6 +36,7 @@
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
     padding: 5%;
+    overflow: hidden;
     font-size: 4rem;
     display: flex;
     z-index: 2;

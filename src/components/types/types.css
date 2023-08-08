@@ -82,8 +82,14 @@
        cursor: pointer;
        font-weight: 200;
        padding: 2% 10% ;
-       border: 1px solid whitesmoke;
+       border: 1px solid whitesmoke; 
+       transition: 0.4s all ease-in-out;
       
+}
+.types__button:hover
+{
+    border:1px  solid green ;
+
 }
 @keyframes animate
 {
@@ -108,4 +114,66 @@
     {
         box-shadow: 200px -80px 200px 0px rgb(59, 4, 4);
     }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:500px)
+{
+    .types__section
+{
+    
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 5% 10% 10% 10%;
+}
+
+.types__left__side
+{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+   
+}
+.green__apple__img
+{
+   
+    left: 45%;
+    top: 70%;
+    z-index: 0;
+}
+.yellow__apple__img
+{ 
+    z-index: 10;
+  
+}
+.types__right__side
+{
+   
+    width: 100%;
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+.types__button
+{
+       display: flex;
+       width: max-content;
+       margin-top: 10%;
+       text-decoration: none;
+       color: whitesmoke;
+       text-transform: uppercase;
+       font-size: 1rem;
+       cursor: pointer;
+       font-weight: 200;
+       padding: 1.5% 8% ;
+       border: 1px solid whitesmoke;
+      
+}
 }

@@ -62,7 +62,7 @@ export default function Bmi() {
 
 
   return (
-    <div className='components__container'>
+    <div className='components__container' id='bmi'>
 
         <div className="heading">bmi</div>
 
