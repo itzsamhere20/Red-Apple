@@ -1,9 +1,19 @@
-import React from 'react'
+import React,{useState } from 'react'
 import "../feature3/diets.css"
 import featureimg from "../../../assets/feature3.jpg"
 import Navbar from '../../../navbar/navbar'
 
 export default function Diets() {
+  const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
     <div  className='blogs__container' id="apple_recipes">
     <Navbar/>
@@ -18,7 +28,7 @@ export default function Diets() {
             </div>
     </div>
 
-    <div className="blog__paragraph__section" >  
+    <div className="blog__paragraph__section"  style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}} >  
         <h1>
        5 Days Apple Diet Plan 
         </h1>

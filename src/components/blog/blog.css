@@ -5,6 +5,7 @@
     width: 90%;
     height:auto;
     margin: 5%;
+    padding-bottom: 5%;
     gap: 50px;
 
 
@@ -80,6 +81,8 @@
 {
    
     width: 80%;
+    
+    padding-bottom: 15%;
     margin: 5% 10% 20% 10%;
    
 }

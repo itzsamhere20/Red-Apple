@@ -46,9 +46,9 @@ export default function Recipe() {
 
                 <div className="cooking__time__container">
 
-                    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>6</div></div>
-                    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>20 mins</div></div>
-                    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>4 hrs 30 mins</div></div>
+                    <div className="time__detail" ><b>YIELDS</b> <div style={{color:'green'}}>6</div></div>
+                    <div className="time__detail"><b>PREP TIME</b> <div style={{color:'green'}}>20 mins</div></div>
+                    <div className="time__detail" ><b>TOTAL TIME</b> <div style={{color:'green'}}>4 hrs 30 mins</div></div>
 
                 </div>
 
@@ -210,9 +210,9 @@ export default function Recipe() {
 
                 <div className="cooking__time__container">
 
-                    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>4</div></div>
-                    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>10 mins</div></div>
-                    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>35 mins</div></div>
+                    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>4</div></div>
+                    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>10 mins</div></div>
+                    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>35 mins</div></div>
 
                 </div>
 
@@ -293,9 +293,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>45 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>4 hrs 45 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>45 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>4 hrs 45 mins</div></div>
 
 </div>
 <h2>Ingredients</h2>
@@ -477,9 +477,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 20 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 20 mins</div></div>
 
 </div>
 
@@ -569,9 +569,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>10 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>30 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>10 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>30 mins</div></div>
 
 </div>
 
@@ -655,9 +655,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 15 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 15 mins</div></div>
 
 </div>
 
@@ -754,9 +754,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>5 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>20 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>45 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>5 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>20 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>45 mins</div></div>
 
 </div>
 
@@ -868,9 +868,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>25 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>25 mins</div></div>
 
 </div>
 
@@ -972,9 +972,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>20</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>20 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 40 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>20</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>20 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 40 mins</div></div>
 
 </div>
 <h2>Ingredients</h2>
@@ -1115,9 +1115,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>9 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>20 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>45 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>9 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>20 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>45 mins</div></div>
 
 </div>
 
@@ -1211,9 +1211,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>12 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 30 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>12 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 30 mins</div></div>
 
 </div>
 
@@ -1324,9 +1324,9 @@ export default function Recipe() {
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>18 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>30 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>2 hrs 15 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>18 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>30 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>2 hrs 15 mins</div></div>
 
 </div>
 
@@ -1447,9 +1447,9 @@ Caramel, for serving</li>
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>6 - 8 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hrs 30 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>6 - 8 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hrs 30 mins</div></div>
 
 </div>
 
@@ -1547,9 +1547,9 @@ Caramel, for serving</li>
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>10 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 10 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>10 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 10 mins</div></div>
 
 </div>
 
@@ -1647,9 +1647,9 @@ Caramel, for serving</li>
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>15 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr</div></div>
 
 </div>
 
@@ -1752,9 +1752,9 @@ Caramel, for serving</li>
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>5 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>10 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>4 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>5 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>10 mins</div></div>
 
 </div>
 
@@ -1834,9 +1834,9 @@ Caramel, for serving</li>
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>8 - 10 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>30 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>4 hrs 40 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>8 - 10 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>30 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>4 hrs 40 mins</div></div>
 
 </div>
 
@@ -1972,9 +1972,9 @@ Caramel, for serving</li>
 
 <div className="cooking__time__container">
 
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
-    <div style={{display:'flex',flexDirection:'column',width:'33%'}}><div>PREP TIME</div> <div style={{color:'green'}}>25 mins</div></div>
-    <div style={{display:'flex',flexDirection:'column',textAlign:'center',width:'33%'}}><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 40 mins</div></div>
+    <div className="time__detail"><div>YIELDS</div> <div style={{color:'green'}}>8 serving(s)</div></div>
+    <div className="time__detail"><div>PREP TIME</div> <div style={{color:'green'}}>25 mins</div></div>
+    <div className="time__detail"><div>TOTAL TIME</div> <div style={{color:'green'}}>1 hr 40 mins</div></div>
 
 </div>
 

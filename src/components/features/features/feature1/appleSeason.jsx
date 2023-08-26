@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState} from 'react'
 import Navbar from '../../../navbar/navbar'
 import "../feature1/appleSeason.css"
 import appleseasonimg from "../../../assets/feature1.jpg"
@@ -33,12 +33,23 @@ import type26 from '../../../assets/type26.png'
 
 import Atropos from 'atropos/react';
 import 'atropos/css/min'
+
 export default function AppleSeason() {
+   const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
     <div  className='blogs__container' id="apple_season">
         <Navbar/>
         <div className="blog__heading__section">
-            <img src={appleseasonimg} alt=" red apple in bag " className='blog__heading__img' />
+            <img src={appleseasonimg} alt=" red apples in bag " className='blog__heading__img' />
                
                   <div className="blog__metadata">
                   <div className="blog__heading">
@@ -48,7 +59,7 @@ export default function AppleSeason() {
                 </div>
         </div>
 
-        <div className="blog__paragraph__section">  
+        <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
             <h1>
             Apple
             </h1>
@@ -57,10 +68,10 @@ export default function AppleSeason() {
            <div className='floating__apple'> <img src={feature1_1} alt=""  className='feature__img'/></div>
           
            <br />
-           <h2>
+           <h1>
            When are apples in season?
 
-           </h2>
+           </h1>
            <br />
            While apples are available at the grocery store year-round, they are best eaten when in season: August through December. In-season apples are juicy, crisp, and flavorful.
            <br /><br />
@@ -169,7 +180,7 @@ export default function AppleSeason() {
             
            </table>
            <br />
-           <h2 id='apple_varieties'>Varieties</h2>
+           <h1 id='apple_varieties'>Varieties</h1>
            <br />
            There are so many different types of apples, it's hard to try them all. Stop by your farmer's market this fall for interesting varieties you can't find at the grocery store.
            <br />
@@ -518,12 +529,12 @@ export default function AppleSeason() {
 
            </div>
            <br />
-           <h2>How to pick out good apples</h2>
+           <h1>How to pick out good apples</h1>
            <br />
            Apples from the grocery store might be a year old, or even older, thanks to technology and perfect storage conditions. While they are fine to eat, they aren't as crisp and flavorful. They also start to get mealy after a few days, since they degrade a faster pace once leaving their perfectly controlled environment (and they are 8 or 12 months old!).
            <br />
            <br />
-           <h2>Storing: in or out of the fridge?</h2>
+           <h1>Storing: in or out of the fridge?</h1>
            <br />
            Apples store really well in home refrigerator temperatures, but their are a few things to keep in mind when putting them in the fridge:
            <br />
@@ -543,7 +554,7 @@ export default function AppleSeason() {
            Apples that are tart and have thicker skin tend to store longer.
            <br />
            <br />
-           <h2>How to prevent apples from browning</h2>
+           <h1>How to prevent apples from browning</h1>
            <br />
            Sometimes you want to keep the flesh of an apple white so it looks appealing on a salad for guests, a snack tray, on a cheese plate, or charcuterie board.
            <br />

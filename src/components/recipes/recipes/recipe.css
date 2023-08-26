@@ -9,6 +9,20 @@
     background-color: rgb(24, 24, 24);
     align-items: center;
 }
+.time__detail
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}.time__detail:nth-child(1)
+{
+    border-right: 1px solid green;
+}
+.time__detail:nth-child(2)
+{
+    border-right: 1px solid green;
+}
+
 .bottom__line
 {
     display: flex;
@@ -23,6 +37,42 @@
     justify-content: center;
     width: 90%;
     align-self: center;
-    height:500px;
+    height:600px;
     object-fit: cover;
+}
+
+
+
+
+@media only screen and (max-width:500px)
+{
+
+    .cooking__time__container
+{
+   
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 5%;
+    padding: 3% 2%;
+    height: max-content;
+    font-weight: 500;
+    gap: 3px;
+    background-color: rgb(24, 24, 24);
+}
+.time__detail
+{
+    font-size: 0.9rem;
+    gap: 2px;
+}
+.apple__recipes__imgs
+{
+    align-self: center;
+    height:200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
 }

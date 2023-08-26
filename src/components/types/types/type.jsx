@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../../navbar/navbar'
 import "./type.css"
 import typeimg from "../../assets/type.jpg";
@@ -31,6 +31,16 @@ import type26 from '../../assets/type26.png'
 
 
 export default function Type() {
+  const [scrolled, setscrolled] = useState(false);
+  const changeNavbar = () =>{
+     if(window.scrollY >=100){
+       setscrolled(true);
+     }
+     else{
+       setscrolled(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbar);
   return (
     
     <div  className='blogs__container' id="apple_types">
@@ -46,7 +56,7 @@ export default function Type() {
             </div>
     </div>
 
-    <div className="blog__paragraph__section">  
+    <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
         <h1>
         Apple varieties
         </h1>
@@ -75,6 +85,7 @@ export default function Type() {
 
 
           <div className="apple__types__section" id='fuji'>
+            
             <div className="apple__types__left__side">
               <img src={type5}  className='apple__types__imgs' />
 

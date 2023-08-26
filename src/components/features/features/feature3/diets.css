@@ -2,9 +2,8 @@
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 90%;
+    margin: 5%;
     gap: 20px;
     height: auto;
 
@@ -15,9 +14,7 @@
     flex-direction: column;
    
     width: 100%;
-    text-align: left;
     padding: 5%;
-    backdrop-filter: blur(10px);
     border-radius: 10px;
     gap: 10px;
     background-color: rgba(24, 23, 23, 0.473);
@@ -33,4 +30,62 @@
 .diet__boxes b
 {
     color: whitesmoke;
+}
+
+
+
+
+
+@media only screen and (max-width:500px)
+{
+
+
+    .diet__plan__container
+{
+   
+    width: 100%;
+    margin: 0;
+    justify-content: start;
+    align-items: start;
+   
+
+}
+.diet__boxes
+{
+    
+    padding: 5%;
+    gap: 10px;
+    box-shadow: 0px 0px 10px 1px green ,
+    inset 0px 0px 10px 1px rgb(56, 117, 47) 
+    ;
+    background: linear-gradient( rgba(23, 107, 23, 0.322) ,rgb(14, 13, 13));
+}
+.diet__boxes:nth-child(even)
+{
+    
+    border-top-right-radius: 50px;
+    
+}
+.diet__boxes:nth-child(odd)
+{
+    box-shadow: 0px 0px 10px 1px rgb(128, 51, 0) ,
+    inset 0px 0px 10px 1px rgb(148, 30, 30) ;
+    background: linear-gradient( rgba(107, 23, 23, 0.322) ,rgb(14, 13, 13));
+    border-bottom-left-radius: 50px;
+}
+.diet__boxes h2
+{
+    margin-bottom: 5%;
+    color: red;
+    justify-content: start;
+}
+.diet__plan__container  :nth-child(even) h2
+{
+    color: green;
+}
+.diet__boxes b
+{
+    color: whitesmoke;
+}
+
 }

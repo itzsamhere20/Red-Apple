@@ -150,6 +150,7 @@
 .yellow__apple__img
 { 
     z-index: 10;
+    overflow: hidden;
   
 }
 .types__right__side

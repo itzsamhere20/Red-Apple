@@ -1,8 +1,18 @@
-import React from 'react'
+import React, {useState } from 'react'
 import Navbar from '../../../navbar/navbar'
 import benifits from '../../../assets/benifits.jpg'
 
 export default function Benifits() {
+  const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
     <div  className='blogs__container' id="benifits">
     <Navbar/>
@@ -17,7 +27,7 @@ export default function Benifits() {
             </div>
     </div>
 
-    <div className="blog__paragraph__section" >  
+    <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}} >  
         <h1>
         Benifits of Apple
         </h1>

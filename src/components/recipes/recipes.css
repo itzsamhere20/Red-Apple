@@ -1,3 +1,32 @@
+.apple__recipes__container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+
+}
+.apple__recipes__section
+{
+    display: flex;
+    width: 90%;
+    margin: 0% 5% 2% 5%;
+    gap: 50px;
+    background:linear-gradient(to right, black , rgba(17, 17, 17, 0.452)  100% );
+    border-radius: 20px;
+    height: max-content;
+    
+}
+.apple__recipes__left__side
+{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
 .apple__recipe__imgs
 {
     display: flex;
@@ -7,6 +36,47 @@
     margin: 5% 0% 5% 10% ;
     border-radius: 20px 0 0 20px;
 }
+.apple__recipes__right__side
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-left: 5%;
+    height: max-content;
+    padding:5% 5% 5% 0%;
+}
+.apple__recipes__right__side h1
+{
+    color: whitesmoke;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+.apple__recipes__right__side p
+{
+ font-size: 1.2rem;
+ line-height: 30px;
+}
+.apple__recipes__right__side ul
+{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.apple__recipes__container :nth-child(even)
+{
+   flex-direction: row-reverse;
+   
+ 
+  
+}
+.apple__recipes__section :nth-child(even) 
+{
+    flex-direction: column;
+  
+  
+  
+}
+
 .apple__recipes__btn
 {
     display: flex;
@@ -26,7 +96,7 @@
     
     background-color: transparent;
 }
-.apple__types__container :nth-child(even) .apple__recipe__imgs
+.apple__recipes__container :nth-child(even) .apple__recipe__imgs
 {
    
    
@@ -35,4 +105,92 @@
    
  
   
+}
+
+
+
+
+
+@media only screen and (max-width:500px)
+{
+ 
+.apple__recipes__section
+{
+    
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    margin: 5% 0;
+    gap: 10px;
+    background:linear-gradient(to bottom left, rgba(88, 196, 124, 0.13),  black , rgba(21, 56, 12, 0.425)  90%  );
+    border-radius: 20px;
+    
+}
+.apple__recipes__left__side
+{
+   
+    width: 100%;
+    height: 22vh;
+    
+}
+.apple__recipe__imgs
+{
+   
+    height:100%;
+    margin:0;
+    border-radius:1000px 250px 400px 15px;
+}
+
+.apple__recipes__right__side
+{
+    
+    width: 100%;
+    margin-left: 0;
+    padding:2%;
+}
+.apple__recipes__right__side h1
+{
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.apple__recipes__right__side p
+{
+ font-size: 0.9rem;
+ line-height: 25px;
+}
+
+
+.apple__recipes__container :nth-child(even)
+{
+   flex-direction: column;
+  
+}
+.apple__recipes__container :nth-child(odd) 
+{
+    flex-direction: column; 
+   
+}
+
+.apple__recipes__btn
+{
+   
+    padding: 2% 15%;
+    border-radius: 5px;
+}
+.apple__recipes__btn:hover
+{
+    
+    background-color: transparent;
+}
+.apple__recipes__container :nth-child(even) .apple__recipe__imgs
+{
+   
+   margin:  0 ;
+   border-radius: 20px;
+   border-radius:200px 1000px 15px 400px;
+  
+}
+
+
+
 }

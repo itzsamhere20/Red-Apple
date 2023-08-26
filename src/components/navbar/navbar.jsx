@@ -41,7 +41,7 @@ export default function Navbar() {
 
               {/* ------ nav link side ------ */}
 
-              <div className="nav__links__side" style={{backgroundColor: scrolled? 'rgba(0, 0, 0, 0.8)': 'transparent'}}>
+              <div className="nav__links__side" style={{backgroundColor: scrolled? 'rgba(0, 0, 0, 0.5)': 'transparent', backdropFilter:  scrolled? 'blur(5px)' : 'none' }}>
 
                 <ul>
                     <li><HashLink to="../#home"  smooth className='hashlink'><div className='nav__links'><FaHome /><span>home</span></div></HashLink></li>

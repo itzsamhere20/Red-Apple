@@ -19,7 +19,7 @@ export default function Hero() {
     <div className='components__container'>
         <video src={herovideo} loop autoPlay muted className="hero__video" />
        <div className="hero__writing__section">
-        <div className="hero__heading">Cultivate + Delight</div>
+        <div className="hero__heading">Refreshing + Delight</div>
         <p>Striving for the Freshest Flavors</p>
         <HashLink to='../feature_1#apple_varieties' className="hero__button" title="choose your favorite Apple">
         Which Apple is your Favorite?
