@@ -31,9 +31,9 @@ export default function Hero() {
 
                
 
-                   <a href='google.com' target='_blank'> <BsFacebook /></a>
-                   <a href='google.com' target='_blank'> <BsInstagram /></a>
-                   <a href='google.com' target='_blank'>   <BsYoutube /></a>
+                   <a href='https://www.faceboook.com/searchedforsameer' target='_blank'> <BsFacebook /></a>
+                   <a href='https://www.instagram.com/i_am_sam_eer' target='_blank'> <BsInstagram /></a>
+                   <a href='https://youtube.com/@ehsaanalistudio' target='_blank'>   <BsYoutube /></a>
 
             
                 

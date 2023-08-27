@@ -28,7 +28,7 @@ export default function Navbar() {
               
               {/* -------- Top logo Side -------- */}
               <div className="top__logo__container"  style={{bottom: scrolled? '88vh': '100vh',transition:'0.4s all linear'}}  >
-                <img src={logo} alt="apple logo top" className='top__nav__logo' />
+              <HashLink to="../#home"  smooth className='hashlink'><img src={logo} alt="apple logo top" className='top__nav__logo' /></HashLink>
               </div>
 {/* --------  Bottom  Nav-logo Side -------- */}
 
@@ -41,7 +41,7 @@ export default function Navbar() {
 
               {/* ------ nav link side ------ */}
 
-              <div className="nav__links__side" style={{backgroundColor: scrolled? 'rgba(0, 0, 0, 0.5)': 'transparent', backdropFilter:  scrolled? 'blur(5px)' : 'none' }}>
+              <div className="nav__links__side" style={{backgroundColor: scrolled? 'rgba(0, 0, 0, 0.5)': 'transparent', backdropFilter:  scrolled? 'blur(5px)' : 'none',borderRadius:scrolled? '1000px' : '0px' }}>
 
                 <ul>
                     <li><HashLink to="../#home"  smooth className='hashlink'><div className='nav__links'><FaHome /><span>home</span></div></HashLink></li>

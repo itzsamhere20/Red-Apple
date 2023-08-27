@@ -49,7 +49,7 @@ table
 }
 th
 {
-    background-color: #060706;
+    background-color: #1a1b1a;
     font-size: 1.3rem;
     font-weight: 500;
     color: white;padding: 2%;
@@ -82,7 +82,7 @@ tr:nth-child(even) {
     text-decoration: none;
     cursor: pointer;
     overflow: visible;
-    background: linear-gradient( rgba(15, 15, 15, 0.582),   black 95%);
+    background: linear-gradient( rgba(22, 22, 22, 0.959),   black 95%);
   }
  
   .atropos img
@@ -132,16 +132,17 @@ tr:nth-child(even) {
  
   
 
-  @media only screen and (max-width:500px)
+  @media only screen and (max-width:768px)
   {
     .floating__apple
 {
-    height: 25vh;
+    height: 250px;
 }
 .feature__img
 {
    
-    width: 100%;
+    width: 90%;
+    object-fit: contain;
  
 }
 
@@ -198,3 +199,6 @@ th
  
   
   }
+
+
+

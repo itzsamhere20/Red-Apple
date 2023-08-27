@@ -23,7 +23,7 @@
     height: 12vh;
     background-color: rgba(0, 0, 0, 0);
     font-size: 1.1rem;
-
+    overflow: hidden;
     z-index: 100;
 }
 .top__logo__container
@@ -69,7 +69,7 @@
 {
     display: flex;
     width: 50%;
-    border-radius: 90px;
+    border-radius: 1000px;
     transition: 0.4s all ease-in-out;
     justify-content: center;
     height: 100%;
@@ -119,6 +119,10 @@
 .hashlink
 {
     text-decoration: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     color: whitesmoke;
 }
 
@@ -130,8 +134,39 @@
 
 
 
+@media only screen and (max-width:980px)
+{
+ 
 
-@media only screen and (max-width:500px)
+
+.top__nav__logo
+{
+    width: 40%;
+    object-fit: contain;
+
+}
+
+}
+@media only screen and (min-width:1400px)
+{
+ 
+
+
+.top__nav__logo
+{
+    width: 60%;
+    object-fit: contain;
+
+}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:768px)
 {
     .nav__container
 {
@@ -142,7 +177,7 @@
 .nav__container2
 {
     
-    bottom: 3vh;
+    bottom: 2.5vh;
     height: auto;
     justify-content: center;
     width: 100%;
@@ -178,7 +213,7 @@
 {  
     width: 70%;
     align-self: center;
-    padding: 2.2% 2.5%;
+    padding: 2.2% 2.7%;
     height: 100%;
 }
 
@@ -192,22 +227,95 @@
    
 }
 .nav__links{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+
     
 }
 .nav__links span
 {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
 }
-
-
-
-
-
-
-
-
 
 
 }
 
+
+@media only screen and (max-height:600px)
+{
+    
+    .nav__container
+{
+    
+    
+    height: 20vh;
+    
+
+    
+}
+
+.nav__container
+{
+   
+  justify-content: center;
+    
+}
+.nav__container2
+{
+    
+    bottom: 2.5vh;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+   
+}
+.top__logo__container
+{
+   
+    display: flex;
+    height: 12vh;
+    margin-bottom: 0vh;
+   
+}
+.top__nav__logo
+{
+    width: 50%;
+    object-fit: contain;
+}
+
+.nav__logo__side
+{
+    display: none;
+    
+}
+
+
+.nav__logo{
+  
+    display: none;
+    
+}
+.nav__links__side
+{  
+    width: 50%;
+    padding: 1% 2%;
+}
+
+
+
+.nav__links__side ul{
+    
+    justify-content: space-around;
+
+
+   
+}
+.nav__links{
+    font-size: 1.3rem;
+
+    
+}
+.nav__links span
+{
+    font-size: 0.65rem;
+}
+}

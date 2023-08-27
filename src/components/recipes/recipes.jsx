@@ -1,4 +1,4 @@
-import React from 'react'  
+import React, {useState} from 'react'  
 import "./recipes.css"
 import { HashLink } from 'react-router-hash-link'
 import Navbar from '../navbar/navbar'
@@ -24,6 +24,17 @@ import recipe18 from "../assets/recipe18.jpg"
 
 
 export default function Recipes() {
+  
+  const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
     <div  className='blogs__container' id="apple_recipes">
     <Navbar/>
@@ -38,7 +49,7 @@ export default function Recipes() {
             </div>
     </div>
 
-    <div className="blog__paragraph__section" >  
+    <div className="blog__paragraph__section"  style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
         <h1>
        Recipes
         </h1>
@@ -62,7 +73,7 @@ export default function Recipes() {
   </div>
   <div className="apple__recipes__right__side" >
     <h1>Apple Hand Pies</h1>
-    <p>Hear us out: Hand pies just might be better than regular pies. They have the perfect crust-to-filling ratio. They're less work than a classic double-crust pie too. But perhaps the best part? No soggy bottoms. Plus, hand pies are delicious and can be filled with everything from blueberries to peaches.</p>
+    <p> Hand pies just might be better than regular pies. They have the perfect crust-to-filling ratio. They're less work than a classic double-crust pie too. But perhaps the best part? No soggy bottoms. Plus, hand pies are delicious and can be filled with everything from blueberries to peaches.</p>
     <br />
     <HashLink to="../apple_recipes#apple_hand_pies" smooth className="apple__recipes__btn">Recipe</HashLink>
   </div>

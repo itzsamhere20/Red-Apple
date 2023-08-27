@@ -1,9 +1,19 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import "../blogs/blogs.css"
 import Navbar from '../../navbar/navbar'
 import  blog__1 from "../../assets/blog1.jpg"
 import blog__1_1 from "../../assets/blog1.1.jpg"
 export default function Blog1() {
+    const [scrolled, setscrolled] = useState(false);
+    const changeNavbar = () =>{
+       if(window.scrollY >=100){
+         setscrolled(true);
+       }
+       else{
+         setscrolled(false);
+       }
+    };
+    window.addEventListener('scroll', changeNavbar);
   return (
     <div className='blogs__container' id='seed_cycling_benifits'>
 <Navbar />
@@ -21,7 +31,7 @@ export default function Blog1() {
                 </div>
         </div>
 
-        <div className="blog__paragraph__section">  
+        <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
             <h1>
             Seed Cycling Benefits for Hormone Balance and PCOS
             </h1>
@@ -89,7 +99,7 @@ export default function Blog1() {
             <br/>
             <br />
 
-            <span style={{fontStyle:"italic"}}>Menstrual Phase</span>
+            <span>Menstrual Phase</span>
 
 
             <br/>
@@ -102,7 +112,7 @@ export default function Blog1() {
             <br/>
 
 
-            <span style={{fontStyle:"italic"}}>Follicular Phase</span>
+            <span>Follicular Phase</span>
             
             <br />
             <br />
@@ -114,7 +124,7 @@ export default function Blog1() {
             <br />
 
 
-            <span style={{fontStyle:"italic"}}>Ovulation Phase</span>
+            <span>Ovulation Phase</span>
 
 
             <br />
@@ -126,7 +136,7 @@ export default function Blog1() {
             <br />
             <br />
 
-            <span style={{fontStyle:"italic"}}>The Luteal Phase</span>
+            <span>The Luteal Phase</span>
 
             <br />
             <br />
@@ -149,7 +159,7 @@ export default function Blog1() {
             <br />
 
 
-            <span style={{textDecoration:'underline'}}>Benefits of Flaxseeds</span>
+            <span >Benefits of Flaxseeds</span>
 
 
              <br />
@@ -163,7 +173,7 @@ export default function Blog1() {
             <br />
             <br />
 
-            <span style={{textDecoration:'underline'}}>Benefits of Pumpkin Seeds</span>
+            <span >Benefits of Pumpkin Seeds</span>
 
 
              <br />
@@ -180,7 +190,7 @@ export default function Blog1() {
             <br />
 
 
-            <span style={{textDecoration:'underline'}}>Benefits of Sunflower Seeds</span>
+            <span >Benefits of Sunflower Seeds</span>
 
 
             <br />
@@ -194,7 +204,7 @@ export default function Blog1() {
             <br />
 
 
-            <span style={{textDecoration:'underline'}}>Benefits of Sesame Seeds</span>
+            <span >Benefits of Sesame Seeds</span>
 
 
             <br />
@@ -230,9 +240,9 @@ export default function Blog1() {
 
             <br />
             <br />
-
-            A <a href='https://www.pakistanbmj.com/journal/index.php/pbmj/article/view/100'target="_blank">systematic review </a> published in 2021 highlights the impact that seed cycling can have as an intervention in the treatment of PCOS.
-
+<div style={{display:'flex',gap:'5px'}}>
+             A <a href='https://www.pakistanbmj.com/journal/index.php/pbmj/article/view/100'target="_blank">   systematic review </a>  </div> published in 2021 highlights the impact that seed cycling can have as an intervention in the treatment of PCOS.
+           
             <br />
             <br />
             <ul>

@@ -13,7 +13,7 @@
     width: 90%;
     margin: 0% 5% 2% 5%;
     gap: 50px;
-    background:linear-gradient(to right, black , rgba(17, 17, 17, 0.452)  100% );
+    background:linear-gradient(to right, black , rgba(24, 23, 23, 0.767)  100% );
     border-radius: 20px;
     height: max-content;
     
@@ -76,9 +76,37 @@
 }
 
 
+@media only screen and (max-width:980px)
+{
+    
+    
+    
+    .apple__types__right__side h1
+    {
+       
+        font-size: 1.7rem;
+        line-height: 35px;
+       
+    }
+    .apple__types__right__side p
+    {
+     font-size: 1rem;
+     line-height: 25px;
+    }
+    .apple__types__right__side ul
+    {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    
 
 
-@media only screen and (max-width:500px)
+}
+
+
+
+
+@media only screen and (max-width:768px)
 {
     .apple__types__container
     {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "../blogs/blogs.css"
 import Navbar from '../../navbar/navbar'
 import blog__3 from "../../assets/blog3.jpg"
@@ -6,6 +6,16 @@ import blog__3_1 from "../../assets/blog3.1.jpg"
 import blog__3_2 from "../../assets/blog3.2.jpg"
 import blog__3_3 from "../../assets/blog3.3.jpg"
 export default function Blog3() {
+  const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
 
     
@@ -25,7 +35,7 @@ export default function Blog3() {
                 </div>
         </div>
 
-        <div className="blog__paragraph__section">  
+        <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
             <h1>
             Making non Alchoholic Apple Cider
             </h1>

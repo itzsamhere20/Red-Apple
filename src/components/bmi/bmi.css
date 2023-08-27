@@ -20,7 +20,7 @@
 {
     display: flex;
     position: absolute;
-    height: 90%;
+    height: 75%;
     width: 4px;
     margin-top: -45%;
     object-fit: cover;
@@ -175,7 +175,7 @@
     align-self: center;
     letter-spacing: 0.5px;
     padding: 2%;
-    margin-top: 5%;
+    margin-top: 10%;
     text-transform: uppercase;
     height: 20%;
     transition: 0.4s all ease-in-out;
@@ -236,7 +236,12 @@ rotate: -90deg;
 
 
 
-@media only screen and (max-width:500px)
+
+
+
+
+
+@media only screen and (max-width:768px)
 {
     .bmi__section
 {
@@ -293,3 +298,67 @@ rotate: -90deg;
   
 }
 }
+
+
+
+
+
+@media only screen and (min-height:1000px)
+{
+    .bmi__img
+{
+  
+    height: 45%;
+   
+}
+
+
+}
+@media only screen and (min-height:1200px)
+{
+    .bmi__img
+{
+  
+    height: 30%;
+   
+}
+
+
+}
+@media only screen and (min-height:1800px)
+{
+    .bmi__img
+{
+  
+    height: 25%;
+   
+}
+
+
+}
+@media only screen and (min-width:2000px)
+{
+    .bmi__img
+    {
+        height: 45%;
+
+    }
+}
+@media only screen and (min-width:2300px)
+{
+    .bmi__img
+    {
+        height: 40%;
+        margin-top: -35%;
+
+    }
+}
+
+
+
+
+
+
+
+
+

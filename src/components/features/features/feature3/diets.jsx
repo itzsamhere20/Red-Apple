@@ -15,7 +15,7 @@ export default function Diets() {
    };
    window.addEventListener('scroll', changeNavbar);
   return (
-    <div  className='blogs__container' id="apple_recipes">
+    <div  className='blogs__container' >
     <Navbar/>
     <div className="blog__heading__section">
         <img src={featureimg} alt=" red applpe with mesuring tape" className='blog__heading__img' />
@@ -28,7 +28,7 @@ export default function Diets() {
             </div>
     </div>
 
-    <div className="blog__paragraph__section"  style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}} >  
+    <div className="blog__paragraph__section"  style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}  id="apple_diets">  
         <h1>
        5 Days Apple Diet Plan 
         </h1>
@@ -43,7 +43,7 @@ export default function Diets() {
              While some meals on this diet contain only apples, other meals also offer lean proteins, whole grains, and veggies.
              <br />
              <br />
-             <div className='diet__plan__container'>
+             <div className='diet__plan__container' >
 
 
               <div className="diet__boxes">

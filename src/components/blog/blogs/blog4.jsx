@@ -1,13 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "../blogs/blogs.css"
 import Navbar from '../../navbar/navbar'
 import blog__4 from "../../assets/blog4.jpg"
 
 export default function Blog4() {
+  const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
 
     
-<div className='blogs__container' id=' 10_tips_for_vegan_baking'>
+<div className='blogs__container' id='10_tips_for_vegan_baking'>
 <Navbar />
         <div className="blog__heading__section">
             <img src={blog__4} alt=" seeds image" className='blog__heading__img' />
@@ -23,7 +33,7 @@ export default function Blog4() {
                 </div>
         </div>
 
-        <div className="blog__paragraph__section">  
+        <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
             <h1>
             10 Tips for Vegan Baking
             </h1>

@@ -1,16 +1,26 @@
-import React from 'react'
+import React ,{useState } from 'react'
 import "../blogs/blogs.css"
 import Navbar from '../../navbar/navbar'
 import blog__5 from "../../assets/blog5.jpg"
 import blog__5_1 from "../../assets/blog5.1.jpg"
 import blog__5_2 from "../../assets/blog5.2.jpg"
 export default function Blog5() {
+  const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
 
     
 <div className='blogs__container' id='apple_nachos'>
 <Navbar />
-        <div className="blog__heading__section">
+        <div className="blog__heading__section" >
             <img src={blog__5} alt=" seeds image" className='blog__heading__img' />
                
                   <div className="blog__metadata">
@@ -24,7 +34,7 @@ export default function Blog5() {
                 </div>
         </div>
 
-        <div className="blog__paragraph__section">  
+        <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
             <h1>
             Apple Nachos
             </h1>

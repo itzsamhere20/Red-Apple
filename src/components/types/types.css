@@ -122,7 +122,8 @@
 
 
 
-@media only screen and (max-width:500px)
+
+@media only screen and (max-width:768px)
 {
     .types__section
 {
@@ -177,4 +178,51 @@
        border: 1px solid whitesmoke;
       
 }
+}
+
+
+
+
+
+@media only screen and (max-height:600px)
+{
+    .types__section
+{
+    
+    height: 70vh;
+    margin: 5% 5% 10% 5%;
+    overflow: visible;
+    z-index: 2;
+}
+.color__change
+{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height: 60%;
+  
+    backdrop-filter: blur(23);
+    border-radius: 50%;
+    margin-top: 5%;
+  
+}
+
+
+.types__right__side
+{
+
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+.types__button
+{
+         
+       font-size: 0.9rem;
+       padding: 1.5% 6% ;
+   
+}
+
+    
 }

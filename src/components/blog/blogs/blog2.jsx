@@ -1,8 +1,18 @@
-import React from 'react'
+import React , {useState} from 'react'
 import "../blogs/blogs.css"
 import Navbar from '../../navbar/navbar'
 import blog__2 from "../../assets/blog2.jpg"
 export default function Blog2() {
+    const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
 
     
@@ -22,7 +32,7 @@ export default function Blog2() {
                 </div>
         </div>
 
-        <div className="blog__paragraph__section">  
+        <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
             <h1>
             GUT HEALING GUIDE
             </h1>
@@ -101,7 +111,7 @@ fiber)</li>
                 <li>DAIRY:   Conventionally raised cow’s milk and cheese, ice cream, half n’ half (sugar free or sweetened).</li>
             </ul>
             <br />
-            <h2 style={{color:'green',textTransform:'uppercase'}}>Supplements for Gut Health</h2>
+            <h2 >Supplements for Gut Health</h2>
             <br />
             While everyone has individual needs, below are some of the most important gut healing supplements that might help you to repair and support a leaky gut:
             <br />
@@ -114,7 +124,7 @@ type of fiber fermented by bacteria into short chain fatty acids (SCFAs).  SCFAs
                 <li>DIGESTIVE ENZYMES:  Digestive enzymes help break down fats, carbs and proteins into molecules that are absorbed through the intestinal wall. Supplemental enzymes may be necessary if we aren’t making enough due to age, disease, or certain medications</li>
             </ul>
             <br />
-            <h2 style={{color:'green',textTransform:'uppercase'}}>Gut Healing Recipes</h2>
+            <h2 >Gut Healing Recipes</h2>
             <br />
             <span >Healing Bone Broth</span>
             <br />

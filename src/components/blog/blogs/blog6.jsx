@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import "../blogs/blogs.css"
 import Navbar from '../../navbar/navbar'
 import blog__6 from "../../assets/blog6.jpg"
@@ -10,6 +10,16 @@ import blog__6_5 from "../../assets/blog6.5.jpg"
 import blog__6_6 from "../../assets/blog6.6.jpg"
 import blog__6_7 from "../../assets/blog6.7.jpg"
 export default function Blog6() {
+  const [scrolled, setscrolled] = useState(false);
+   const changeNavbar = () =>{
+      if(window.scrollY >=100){
+        setscrolled(true);
+      }
+      else{
+        setscrolled(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbar);
   return (
 
     
@@ -29,7 +39,7 @@ export default function Blog6() {
                 </div>
         </div>
 
-        <div className="blog__paragraph__section">  
+        <div className="blog__paragraph__section" style={{filter: scrolled? 'none': 'blur(3px)',transition:'0.3s all linear'}}>  
             <h1>
             Healthy Holiday Treats
             </h1>

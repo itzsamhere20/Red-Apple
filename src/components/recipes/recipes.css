@@ -56,11 +56,6 @@
  font-size: 1.2rem;
  line-height: 30px;
 }
-.apple__recipes__right__side ul
-{
-    font-size: 1.1rem;
-    line-height: 30px;
-}
 
 .apple__recipes__container :nth-child(even)
 {
@@ -110,8 +105,38 @@
 
 
 
+@media only screen and (max-width:1080px)
+{
+    
 
-@media only screen and (max-width:500px)
+.apple__recipes__right__side h1
+{
+
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+.apple__recipes__right__side p
+{
+ font-size: 1rem;
+ line-height: 25px;
+}
+.apple__recipes__btn
+{
+    
+    padding: 0% 12%;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    
+    
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width:768px)
 {
  
 .apple__recipes__section
@@ -121,7 +146,7 @@
     width: 100%;
     padding: 5%;
     margin: 5% 0;
-    gap: 10px;
+    gap: 15px;
     background:linear-gradient(to bottom left, rgba(88, 196, 124, 0.13),  black , rgba(21, 56, 12, 0.425)  90%  );
     border-radius: 20px;
     
