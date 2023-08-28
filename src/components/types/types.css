@@ -144,14 +144,15 @@
 .green__apple__img
 {
    
-    left: 45%;
-    top: 70%;
+    left: 49%;
+    top: 60%;
     z-index: 0;
 }
 .yellow__apple__img
 { 
     z-index: 10;
-    overflow: hidden;
+    left: -50%;
+    top: 70%;
   
 }
 .types__right__side
