@@ -73,6 +73,35 @@
 }
 
 
+.footer__links 
+{
+    display: none;
+    width: 50%;
+    margin: 0% 25% 30%;
+    height: max-content;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+.footer__links a
+{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+.footer__links a:hover
+{
+    color: rgba(255, 255, 255, 0.486);
+}
+
+@media only screen and (max-width:768px)
+{
+    
+.footer__links 
+{
+    display: flex;
+}
+
+}
 
 
 @media only screen and (max-width:600px)
@@ -82,8 +111,8 @@
    
     width: 80%;
     
-    padding-bottom: 15%;
-    margin: 5% 10% 20% 10%;
+    padding-bottom: 5%;
+    margin: 5% 10%;
    
 }
 

@@ -8,6 +8,7 @@ import blog5 from "../assets/blog5.jpg"
 import blog6 from "../assets/blog6.jpg"
 import { HashLink } from "react-router-hash-link";
 
+import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs"
 
 export default function Blog() {
   return (
@@ -81,6 +82,14 @@ export default function Blog() {
 
 
 
+    </div>
+
+    <div className="footer__links">
+      
+
+    <a href='https://www.faceboook.com/searchedforsameer' target='_blank'> <BsFacebook /></a>
+                   <a href='https://www.instagram.com/i_am_sam_eer' target='_blank'> <BsInstagram /></a>
+                   <a href='https://youtube.com/@ehsaanalistudio' target='_blank'>   <BsYoutube /></a>
     </div>
    
 
